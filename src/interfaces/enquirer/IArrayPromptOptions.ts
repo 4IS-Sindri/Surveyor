@@ -12,7 +12,7 @@ export interface IArrayPromptOptions extends IBasePromptOptions {
     | 'scale'
   choices: string[] | Choice[]
   maxChoices?: number
-  muliple?: boolean
+  multiple?: boolean
   initial?: number
   delay?: number
   separator?: boolean
