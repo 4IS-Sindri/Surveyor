@@ -5,8 +5,8 @@ import {
   IFunding,
   IPublishConfig,
   IRepository,
-  IScripts
-} from './index.js'
+  IScripts,
+} from "./index.js";
 
 /**
  * This interfaces defines the most common properties of a package.json file.
@@ -14,56 +14,56 @@ import {
  */
 export interface IPackageJson {
   /** The name of the package. */
-  name: string
+  name: string;
 
   /** The display name of the package. */
-  displayName?: string
+  displayName?: string;
 
   /** The version of the package. */
-  version?: string
+  version?: string;
 
   /** The description of the package. */
-  description?: string
+  description?: string;
 
   /**
    * An optional array of keywords associated with the package. Useful for
    * helping other developers find your package.
    */
-  keywords?: string[]
+  keywords?: string[];
 
   /** The url to the project homepage. */
-  homepage?: string
+  homepage?: string;
 
   /** Where to report bugs. */
-  bugs?: IBugs | string
+  bugs?: IBugs | string;
 
   /** The license of the package. */
-  license?: string
+  license?: string;
 
   /** The author of the package. */
-  author?: IAuthor | string
+  author?: IAuthor | string;
 
   /**
    * An array of individuals who have contributed to the package. The array can
    * contain strings, objects, or both.
    */
-  contributors?: Array<IAuthor | string>
+  contributors?: Array<IAuthor | string>;
 
   /** Provides information on how to help fund the development of the module. */
-  funding?: IFunding | Array<IFunding | string>
+  funding?: IFunding | Array<IFunding | string>;
 
   /** The type of module exported by the package: ESM (`module`) or CommonJS. */
-  type?: 'module' | 'commonjs'
+  type?: "module" | "commonjs";
 
   /**
    * An array of file patterns that describes the entries to be included when
    * your package is installed as a dependency. Any file(s) specified here can
    * **_NOT_** be excluded through `.npmignore` or `.gitignore`.
    */
-  files?: string[]
+  files?: string[];
 
   /** A module ID that is the primary entry point to your program. */
-  main?: string
+  main?: string;
 
   /**
    * If your module is meant to be used client-side the browser field should be
@@ -73,13 +73,13 @@ export interface IPackageJson {
    * @example
    * `window`
    */
-  browser?: string
+  browser?: string;
 
   /**
    * Specifies either a single file or an array of filenames to be put in place
    * for the `man` program to find.
    */
-  man?: string | string[]
+  man?: string | string[];
 
   /**
    * A map of command names to local file names. From the official documentation
@@ -91,13 +91,13 @@ export interface IPackageJson {
    * it will be available to that package either directly by npm exec or by name
    * in other scripts when invoking them via npm run-script.
    */
-  bin?: string | Record<string, string>
+  bin?: string | Record<string, string>;
 
   /** The repository where the packages code is stored. */
-  repository?: IRepository | string
+  repository?: IRepository | string;
 
   /** The block of commands to be used during development. */
-  scripts?: IScripts
+  scripts?: IScripts;
 
   /**
    * A method for indicating the structure of your CommonJS package. For more
@@ -111,20 +111,20 @@ export interface IPackageJson {
    *
    * > In the future, this information may be used in other creative ways.
    */
-  directories?: IDirectories
+  directories?: IDirectories;
 
   /**
    * A "config" object can be used to set configuration parameters used in
    * package scripts that persist across upgrades.
    */
-  config?: Record<string, any>
+  config?: Record<string, any>;
 
   // #region Dependencies
-  dependencies?: Record<string, string>
-  devDependencies?: Record<string, string>
-  peerDependencies?: Record<string, string>
-  optionalDependencies?: Record<string, string>
-  bundledDependencies?: Record<string, string>
+  dependencies?: Record<string, string>;
+  devDependencies?: Record<string, string>;
+  peerDependencies?: Record<string, string>;
+  optionalDependencies?: Record<string, string>;
+  bundledDependencies?: Record<string, string>;
   // #endregion Dependencies
 
   /**
@@ -132,7 +132,7 @@ export interface IPackageJson {
    * into a single comment so if you'd like more information, please refer to
    * the [official documentation](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#overrides).
    */
-  overrides?: Record<string, string>
+  overrides?: Record<string, string>;
 
   /**
    * The property to set when you want/need a specific version of NodeJS/NPM in
@@ -140,7 +140,7 @@ export interface IPackageJson {
    *
    * @see https://docs.npmjs.com/cli/v8/configuring-npm/package-json#engines
    */
-  engines?: Record<string, string>
+  engines?: Record<string, string>;
 
   /**
    * The property set when you need to specify which operating system your
@@ -149,17 +149,17 @@ export interface IPackageJson {
    *
    * For example, to allow MacOS but block Linux: `os: ["darwin", "!linux"]`
    */
-  os?: string[]
+  os?: string[];
 
   /**
    * If your code only runs on certain CPU architectures, specify them here. And
    * just like the `OS` property, you can use the `!` character to block a
    * specific CPU architecture.
    */
-  cpu?: string[]
+  cpu?: string[];
 
   /** If set to true, npm will refuse to publish it. */
-  private?: boolean
+  private?: boolean;
 
   /**
    * This is a set of config values that will be used at publish-time. It's
@@ -171,7 +171,7 @@ export interface IPackageJson {
    * See [config](https://docs.npmjs.com/cli/v8/using-npm/config) to see the
    * list of config options that can be overridden.
    */
-  publishConfig?: IPublishConfig
+  publishConfig?: IPublishConfig;
 
   /**
    * The optional workspaces field is an array of file patterns that describes
@@ -186,5 +186,5 @@ export interface IPackageJson {
    * For more examples and information, see the
    * [documentation](https://docs.npmjs.com/cli/v8/using-npm/workspaces).
    */
-  workspaces?: string[]
+  workspaces?: string[];
 }

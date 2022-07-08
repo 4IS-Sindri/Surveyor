@@ -1,2 +1,2 @@
-export * from './Author.js'
-export * from './Defaults.js'
+export * from "./Author.js";
+export * from "./Defaults.js";

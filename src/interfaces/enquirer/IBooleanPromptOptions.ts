@@ -1,6 +1,6 @@
-import { IBasePromptOptions } from './index.js'
+import { IBasePromptOptions } from "./index.js";
 
 export interface IBooleanPromptOptions extends IBasePromptOptions {
-  type: 'confirm'
-  initial?: boolean
+  type: "confirm";
+  initial?: boolean;
 }

@@ -1,5 +1,5 @@
 export interface IDirectories {
-  [key: string]: string | undefined
+  [key: string]: string | undefined;
 
   /**
    * If you provide a `bin` directory to this property, all the files in that
@@ -10,11 +10,11 @@ export interface IDirectories {
    * individual files, use `bin`, and for all the files in an existing `bin`
    * directory, use `directories.bin`.
    */
-  bin?: string
+  bin?: string;
 
   /**
    * A folder that is full of man pages. Sugar to generate a "man" array by
    * walking the folder.
    */
-  man?: string
+  man?: string;
 }
