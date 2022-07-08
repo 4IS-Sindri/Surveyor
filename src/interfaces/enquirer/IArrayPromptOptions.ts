@@ -1,4 +1,4 @@
-import { IBasePromptOptions } from './index.js'
+import { Choice, IBasePromptOptions } from './index.js'
 
 export interface IArrayPromptOptions extends IBasePromptOptions {
   type:
