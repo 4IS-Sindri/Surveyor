@@ -1,17 +1,17 @@
 /** This interface defines the `scripts` property of a package.json file. */
 export interface IScripts {
   /** For adding non-standard/custom scripts. */
-  [key: string]: string | undefined;
+  [key: string]: string | undefined
 
   /** The command executed when starting your module. */
-  start?: string;
+  start?: string
 
   /** The command to be executed when testing your module/codebase. */
-  test?: string;
+  test?: string
 
   /** A custom script I include that transpiles the TypeScript to JavaScript. */
-  build?: string;
+  build?: string
 
   /** A custom script I include for executing prettier across the codebase. */
-  pretty?: string;
+  pretty?: string
 }

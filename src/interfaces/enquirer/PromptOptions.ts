@@ -5,8 +5,8 @@ import {
   INumberPromptOptions,
   ISnippetPromptOptions,
   ISortPromptOptions,
-  IStringPromptOptions,
-} from "./index.js";
+  IStringPromptOptions
+} from './index.js'
 
 /**
  * A custom built type combining the various prompt options available from
@@ -20,4 +20,4 @@ export type PromptOptions =
   | IStringPromptOptions
   | INumberPromptOptions
   | ISnippetPromptOptions
-  | ISortPromptOptions;
+  | ISortPromptOptions

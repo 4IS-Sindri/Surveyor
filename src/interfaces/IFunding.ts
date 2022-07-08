@@ -1,4 +1,4 @@
 export interface IFunding {
-  type?: string;
-  url?: string;
+  type?: string
+  url?: string
 }

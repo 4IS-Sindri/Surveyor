@@ -1,4 +1,4 @@
 export interface IBugs {
-  email?: string;
-  url?: string;
+  email?: string
+  url?: string
 }

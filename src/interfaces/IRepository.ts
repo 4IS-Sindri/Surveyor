@@ -1,5 +1,5 @@
 export interface IRepository {
-  type?: string;
-  url?: string;
-  directory?: string;
+  type?: string
+  url?: string
+  directory?: string
 }
